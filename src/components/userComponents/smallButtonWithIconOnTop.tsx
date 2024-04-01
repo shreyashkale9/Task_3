@@ -6,7 +6,7 @@ interface SmallButtonWithIconOnTopProps {
   /** Text to display on the button */
   icon: IconType;
   name: string;
-  size: number;
+  size?: number;
   /** Optional click handler function */
   onClick?: () => void;
 }
@@ -16,11 +16,11 @@ const SmallButtonWithIconOnTop : React.FC<SmallButtonWithIconOnTopProps> = ({ ic
   return (
     <div>
       <button
-        className="flex flex-col items-center bg-white py-2 px-4 rounded-md shadow-sm hover:shadow-md focus:outline-none focus:ring-none"
+        className="flex flex-col items-center bg-[#D9D9D9] h-[57px] w-[54px]"
         onClick={onClick}
       >
-        <Icon className="text-green-500 mb-1" size={size} />
-        <span className="font-semibold mt-1">{name}</span>
+        <Icon className="text-[#000000] w-[20px] h-[19px]"/>
+        <span className="w-[28px] h-[16px]">{name}</span>
       </button>
     </div>  
   );

@@ -3,9 +3,10 @@ import { GoBold } from "react-icons/go";
 import { CiText } from "react-icons/ci";
 import { LiaMarkerSolid } from "react-icons/lia";
 import ButtonWithIconOnTop from "./userComponents/buttonWithIconOnTop";
+import SmallButtonWithIconOnTop from "./userComponents/smallButtonWithIconOnTop";
 import { GrTable } from "react-icons/gr";
 import { PiRectangle } from "react-icons/pi";
-import { BiSolidEraser } from "react-icons/bi";
+import { BiEraser, BiSolidEraser } from "react-icons/bi";
 import { FaPenClip } from "react-icons/fa6";
 import { PiStampFill } from "react-icons/pi";
 
@@ -52,21 +53,22 @@ const tableContents: TableItem[] = [
 
 const ButtonsTab = () => {
   return (
-    <div className="bg-white w-[132px] h-[336px] p-2">
+    <div className="bg-white w-[132px] h-[336px] p-2 mt-5">
       <div className="flex">
-        <ButtonWithIconOnTop icon={GoBold} name="Bold" size={10}/>
-        <ButtonWithIconOnTop icon={CiText} name="Text" size={10}/>
+        <SmallButtonWithIconOnTop icon={GoBold} name="Bold" />
+        <SmallButtonWithIconOnTop icon={CiText} name="Text" />
       </div>
       <div className="flex">
-      <ButtonWithIconOnTop icon={LiaMarkerSolid} name="HLT" size={10} />
-      <ButtonWithIconOnTop icon={GrTable} name="Table" size={10} />
+      <SmallButtonWithIconOnTop icon={LiaMarkerSolid} name="HLT"  />
+      <SmallButtonWithIconOnTop icon={GrTable} name="Table"  />
       </div>
       <div className="flex">
-      <ButtonWithIconOnTop icon={PiRectangle} name="Reactangle" size={10} />
-      <ButtonWithIconOnTop icon={BiSolidEraser} name="Eraser" size={10} />
+      <SmallButtonWithIconOnTop icon={PiRectangle} name="Reactangle"  />
+      <SmallButtonWithIconOnTop icon={BiSolidEraser} name="Eraser"  />
       </div>
       <div className="flex">
-        <SmallButtonWithIconOnTop icon={} name="" size={}/>
+        <SmallButtonWithIconOnTop icon={FaPenClip} name="Pen" />
+        <SmallButtonWithIconOnTop icon={PiStampFill} name="Stamp" />
       </div>
       <div></div>
     </div>

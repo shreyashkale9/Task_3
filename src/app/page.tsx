@@ -7,7 +7,7 @@ import IconButton from "@/components/userComponents/iconButton";
 import ButtonWithIconOnTop from "@/components/userComponents/buttonWithIconOnTop";
 import DocumentPreview from "@/components/documentPreview";
 import ButtonsTab from "@/components/buttonsTab";
-
+import LargeButtonsTab from "@/components/largeButtonsTab";
 
 export default function Home() {
   return (
@@ -17,9 +17,10 @@ export default function Home() {
       </div>
       <div className="flex">
         <VerticalNavbar />
-        <div className="flex flex-col m-4 p-2 bg-[#000000] w-full">
-            <DocumentPreview />
-            {/* <ButtonsTab /> */}
+        <div className="flex flex-col m-4 p-2 bg-[#efefef] w-full">
+          <DocumentPreview />
+          <ButtonsTab />
+          <LargeButtonsTab />
         </div>
       </div>
     </main>
