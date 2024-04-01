@@ -2,18 +2,10 @@ import React, { useRef, useEffect } from "react";
 
 interface InputFieldProps {
   value: string;
-  onChange?: (value: string) => void;
+  onChange: (value: string) => void;
 }
 
 const InputField: React.FC<InputFieldProps> = ({ value, onChange }) => {
-  const inputRef = useRef<HTMLInputElement>(null);
-
-  useEffect(() => {
-    if (inputRef.current) {
-      inputRef.current.focus();
-    }
-  }, []);
-
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     onChange(e.target.value);
   };

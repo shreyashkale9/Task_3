@@ -1,5 +1,4 @@
 import React from "react";
-import { HiMenu } from "react-icons/hi";
 import { FaBars } from "react-icons/fa";
 import { MdOutlineDashboard } from "react-icons/md";
 import { RiDraftLine, RiMailSendLine, RiDeleteBin6Line } from "react-icons/ri";
@@ -20,7 +19,7 @@ const VerticalNavbar = () => {
       </div>
       <div className="flex flex-col justify-between">
         {/* Options */}
-        <div className="flex flex-col">
+        <div>
           <MenuButton icon={MdOutlineDashboard} name="Dashboard" />
           <MenuButton icon={RiDraftLine} name="Draft" />
           <MenuButton icon={RiMailSendLine} name="Sent Application" />
@@ -32,7 +31,7 @@ const VerticalNavbar = () => {
             name="Check Signature"
           />
         </div>
-        <div className="flex flex-col">
+        <div>
           <MenuButton icon={LiaSignOutAltSolid} name="Sign Out" />
         </div>
       </div>

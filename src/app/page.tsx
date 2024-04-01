@@ -1,11 +1,7 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "@/components/navbar";
 import VerticalNavbar from "@/components/verticalNavbar";
-import Dropdown from "@/components/userComponents/dropdown";
-import ButtonWithIconOnLeft from "@/components/userComponents/buttonWithIconOnLeft";
-import IconButton from "@/components/userComponents/iconButton";
-import ButtonWithIconOnTop from "@/components/userComponents/buttonWithIconOnTop";
 import DocumentPreview from "@/components/documentPreview";
 import ButtonsTab from "@/components/buttonsTab";
 import LargeButtonsTab from "@/components/largeButtonsTab";
@@ -25,7 +21,7 @@ export default function Home() {
             <DocumentPreview />
             <div className="flex">
               <ButtonsTab />
-              <InputField value="" />
+              <InputField value="hey" onChange={e => e} />
             </div>
             <LargeButtonsTab />
           </div>

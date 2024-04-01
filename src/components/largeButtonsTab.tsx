@@ -9,16 +9,28 @@ const LargeButtonsTab = () => {
   return (
     <div className="mt-5">
       <div className="mb-2">
-        <ButtonWithIconOnTop icon={FaPlusCircle} name="Add Signature" />
+        <ButtonWithIconOnTop
+          icon={FaPlusCircle}
+          name="Add Signature"
+          color="#46FF33"
+        />
       </div>
       <div className="mb-2">
-        <ButtonWithIconOnTop icon={SlEnvolopeLetter} name="Letter Head" />
+        <ButtonWithIconOnTop
+          icon={SlEnvolopeLetter}
+          name="Letter Head"
+          color="#FF6C33"
+        />
       </div>
       <div className="mb-2">
         <ButtonWithIconOnTop icon={GiHamburgerMenu} name="Content" />
       </div>
       <div className="mb-2">
-        <ButtonWithIconOnTop icon={TbTemplate} name="Templates" />
+        <ButtonWithIconOnTop
+          icon={TbTemplate}
+          name="Templates"
+          color="#BF40BF"
+        />
       </div>
     </div>
   );

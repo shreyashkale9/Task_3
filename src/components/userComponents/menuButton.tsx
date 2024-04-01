@@ -16,7 +16,7 @@ const MenuButton: React.FC<IconButtonProps> = ({
     <div>
       <button>
         <div className="flex items-center p-4">
-          <Icon className="w-6 h-6 mr-2 text-gray-500"/>
+          <Icon className="w-6 h-6 mr-2 text-gray-500" />
           <span>{name}</span>
         </div>
       </button>
