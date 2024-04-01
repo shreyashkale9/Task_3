@@ -19,7 +19,7 @@ const ButtonWithIconOnTop : React.FC<ButtonWithIconOnTopProps> = ({ icon : Icon,
         className="flex flex-col items-center bg-white w-[132px] h-[84px] py-2 px-4 rounded-md shadow-sm hover:shadow-md focus:outline-none focus:ring-none"
         onClick={onClick}
       >
-        <Icon className="text-green-500 mb-1" size={32}/>
+        <Icon className="text-green-500 ${} mb-1" size={32}/>
         <span className="h-[20px] w-[110px] mt-1">{name}</span>
       </button>
     </div>

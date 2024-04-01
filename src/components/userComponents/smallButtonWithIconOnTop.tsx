@@ -16,11 +16,11 @@ const SmallButtonWithIconOnTop : React.FC<SmallButtonWithIconOnTopProps> = ({ ic
   return (
     <div>
       <button
-        className="flex flex-col items-center bg-[#D9D9D9] h-[57px] w-[54px]"
+        className="flex flex-col items-center bg-[#D9D9D9] h-[57px] w-[54px] text-xs ml-1 mb-1"
         onClick={onClick}
       >
-        <Icon className="text-[#000000] w-[20px] h-[19px]"/>
-        <span className="w-[28px] h-[16px]">{name}</span>
+        <Icon className="text-[#000000] w-[20px] h-[19px] mt-3"/>
+        {name}
       </button>
     </div>  
   );

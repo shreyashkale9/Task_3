@@ -32,7 +32,7 @@ const VerticalNavbar = () => {
             name="Check Signature"
           />
         </div>
-        <div>
+        <div className="flex flex-col">
           <MenuButton icon={LiaSignOutAltSolid} name="Sign Out" />
         </div>
       </div>

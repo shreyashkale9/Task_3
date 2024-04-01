@@ -1,0 +1,34 @@
+import React, { useRef, useEffect } from "react";
+
+interface InputFieldProps {
+  value: string;
+  onChange?: (value: string) => void;
+}
+
+const InputField: React.FC<InputFieldProps> = ({ value, onChange }) => {
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
+  }, []);
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    onChange(e.target.value);
+  };
+
+  return (
+    <div className="flex items-center w-[1424px] h-[36px] mt-10 ml-20">
+      <span className="w-[95px] h-[23px]">Subject:</span>
+      <input
+        type="text"
+        value={value}
+        onChange={handleChange}
+        className="w-[1124px] h-[36px] border border-gray-300 rounded px-4"
+      />
+    </div>
+  );
+};
+
+export default InputField;
