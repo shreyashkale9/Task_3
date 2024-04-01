@@ -7,11 +7,13 @@ import { RiSave3Line } from "react-icons/ri";
 import { BsFillSendFill } from "react-icons/bs";
 
 const DocumentPreview = () => {
+  const signatureFlowOptions = ["All at once", "Hierarchy"];
+  const priorityOptions = ["Normal", "Urgent"];
   return (
     <div className="flex justify-between p-2 bg-[#efefef] h-20 w-full">
       <div className="flex">
-        <Dropdown />
-        <Dropdown />
+        <Dropdown name="Signature Flow" options={signatureFlowOptions} />
+        <Dropdown name="Priority" options={priorityOptions} />
       </div>
       <div className="flex">
         <ButtonWithIconOnLeft
