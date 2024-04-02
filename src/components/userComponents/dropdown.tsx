@@ -43,7 +43,7 @@ const Dropdown: React.FC<DropdownProps> = ({ name, options }) => {
         id="dropdown"
         className={`${
           isOpen ? "block" : "hidden"
-        } z-99999 bg-white divide-y divide-gray-100 shadow w-44 `}
+        } relative bg-white divide-y divide-gray-100 shadow w-44 `}
       >
         <ul
           className="py-2 text-sm text-[#000000] dark:text-gray-200"

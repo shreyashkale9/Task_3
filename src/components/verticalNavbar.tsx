@@ -11,13 +11,13 @@ import IconButton from "./userComponents/iconButton";
 
 const VerticalNavbar = () => {
   return (
-    <div className="relative flex flex-col items-start h-[93vh] w-[250px] bg-white shadow">
+    <div className="relative flex flex-col items-start h-[93vh] w-[250px] bg-[#ffffff] shadow">
       {/* Heading */}
       <div className="flex justify-between w-full p-4">
         <span className="text-sm font-semibold">Menu</span>
         <IconButton icon={FaBars} />
       </div>
-      <div className="flex flex-col justify-between">
+      <div className="flex flex-col justify-between h-full mt-5">
         {/* Options */}
         <div>
           <MenuButton icon={MdOutlineDashboard} name="Dashboard" />

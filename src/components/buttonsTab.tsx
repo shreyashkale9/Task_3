@@ -11,7 +11,7 @@ import SmallButtonWithIconOnTop from "./userComponents/smallButtonWithIconOnTop"
 
 const ButtonsTab = () => {
   return (
-    <div className="bg-white w-[132px] h-[336px] p-2 mt-5">
+    <div className="bg-[#ffffff] w-[132px] h-[336px] p-2 mt-5">
       <div className="flex">
         <SmallButtonWithIconOnTop icon={GoBold} name="Bold" />
         <SmallButtonWithIconOnTop icon={CiText} name="Text" />
