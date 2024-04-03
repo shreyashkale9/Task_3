@@ -1,6 +1,6 @@
 import React from "react";
-import Dropdown from "./userComponents/dropdown";
-import ButtonWithIconOnLeft from "./userComponents/buttonWithIconOnLeft";
+import Dropdown from "./userComponents/Dropdown";
+import ButtonWithIconOnLeft from "./userComponents/ButtonWithIconOnLeft";
 import { IoPawSharp } from "react-icons/io5";
 import { FaPlusCircle } from "react-icons/fa";
 import { RiSave3Line } from "react-icons/ri";

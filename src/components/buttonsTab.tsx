@@ -7,7 +7,7 @@ import { PiRectangle } from "react-icons/pi";
 import { BiEraser, BiSolidEraser } from "react-icons/bi";
 import { FaPenClip } from "react-icons/fa6";
 import { PiStampFill } from "react-icons/pi";
-import SmallButtonWithIconOnTop from "./userComponents/smallButtonWithIconOnTop";
+import SmallButtonWithIconOnTop from "./userComponents/SmallButtonWithIconOnTop";
 
 const ButtonsTab = () => {
   return (

@@ -1,4 +1,4 @@
-import AvatarRounded from "./userComponents/avatarRounded";
+import AvatarRounded from "./userComponents/AvatarRounded";
 import profile from "../../public/pro.png";
 import notification from "../../public/notification.png";
 

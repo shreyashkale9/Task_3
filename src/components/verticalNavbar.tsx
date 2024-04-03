@@ -6,8 +6,9 @@ import { IoArrowUndoOutline } from "react-icons/io5";
 import { AiTwotoneFolderOpen } from "react-icons/ai";
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
 import { LiaSignOutAltSolid } from "react-icons/lia";
-import MenuButton from "./userComponents/menuButton";
-import IconButton from "./userComponents/iconButton";
+import MenuButton from "./userComponents/MenuButton";
+import IconButton from "./userComponents/IconButton";
+import Link from 'next/link';
 
 const VerticalNavbar = () => {
   return (
@@ -20,7 +21,9 @@ const VerticalNavbar = () => {
       <div className="flex flex-col justify-between h-full mt-5">
         {/* Options */}
         <div>
+          <Link href="/dashboard">
           <MenuButton icon={MdOutlineDashboard} name="Dashboard" />
+          </Link>
           <MenuButton icon={RiDraftLine} name="Draft" />
           <MenuButton icon={RiMailSendLine} name="Sent Application" />
           <MenuButton icon={IoArrowUndoOutline} name="Revert Back" />

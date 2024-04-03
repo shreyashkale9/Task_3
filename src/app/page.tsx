@@ -1,13 +1,17 @@
 "use client";
 import React, { useState } from "react";
-import Navbar from "@/components/navbar";
-import VerticalNavbar from "@/components/verticalNavbar";
-import DocumentPreview from "@/components/documentPreview";
-import ButtonsTab from "@/components/buttonsTab";
-import LargeButtonsTab from "@/components/largeButtonsTab";
-import InputField from "@/components/userComponents/inputField";
+import Navbar from "@/components/Navbar";
+import VerticalNavbar from "@/components/VerticalNavbar";
+import DocumentPreview from "@/components/DocumentPreview";
+import ButtonsTab from "@/components/ButtonsTab";
+import LargeButtonsTab from "@/components/LargeButtonsTab";
+import InputField from "@/components/userComponents/InputField";
 
 export default function Home() {
+  const [val, setVal] = useState("hey");
+  const change = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setVal(event.target.value);
+  };
 
   return (
     <main className="flex flex-col">
@@ -21,7 +25,7 @@ export default function Home() {
             <DocumentPreview />
             <div className="flex">
               <ButtonsTab />
-              <InputField value="hey" onChange={e => e} />
+              <InputField value={val} onChange={change} />
             </div>
             <LargeButtonsTab />
           </div>
