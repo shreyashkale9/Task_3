@@ -2,10 +2,7 @@
 import React, { useState } from "react";
 import Navbar from "@/components/Navbar";
 import VerticalNavbar from "@/components/VerticalNavbar";
-import DocumentPreview from "@/components/DocumentPreview";
-import ButtonsTab from "@/components/ButtonsTab";
-import LargeButtonsTab from "@/components/LargeButtonsTab";
-import InputField from "@/components/userComponents/InputField";
+import MainContent from "@/components/MainContent";
 
 export default function Home() {
   const [val, setVal] = useState("hey");
@@ -20,14 +17,9 @@ export default function Home() {
       </div>
       <div className="flex">
         <VerticalNavbar />
-        <div className="flex m-4 p-2 bg-[#efefef] w-full">
+        <div className="flex m-4 p-3 bg-[#ffffff] w-full">
           <div className="w-full">
-            <DocumentPreview />
-            <div className="flex">
-              <ButtonsTab />
-              <InputField value={val} onChange={change} />
-            </div>
-            <LargeButtonsTab />
+            <MainContent />
           </div>
         </div>
       </div>
